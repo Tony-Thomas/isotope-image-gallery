@@ -1,0 +1,24 @@
+{
+  "name": "isotope",
+  "version": "1.0.0",
+  "description": "isotope image gallery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tony-Thomas/isotope-image-gallery.git"
+  },
+  "author": "Tony Thomas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tony-Thomas/isotope-image-gallery/issues"
+  },
+  "homepage": "https://github.com/Tony-Thomas/isotope-image-gallery#readme",
+  "dependencies": {
+    "isotope-cells-by-row": "^1.1.3",
+    "isotope-layout": "^3.0.4",
+    "jquery": "^3.2.1"
+  }
+}

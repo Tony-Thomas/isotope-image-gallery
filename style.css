@@ -1,0 +1,126 @@
+
+/*--------------------------------------------------------------
+Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+body {
+	color: #404040;
+	font: 18px 'Helvetica', 'Segoe UI', Arial, sans-serif;
+}
+
+/*--------------------------------------------------------------
+Header styles
+--------------------------------------------------------------*/
+
+.masthead {
+    padding-bottom: 1em;
+    background: #eee;
+	text-align: center;
+}
+
+.site-title {
+    margin: 0;
+    padding: 1em 0 0;
+    font-size: 2em;
+    font-weight: 300;
+    color: black;
+}
+
+/*--------------------------------------------------------------
+Main area
+--------------------------------------------------------------*/
+
+.main-area {
+	padding: 1em;
+}
+
+.gallery {
+	margin: 0 auto;
+	max-width: 80em;
+}
+
+/* Flex layout */
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	transition: all .2s;
+}
+
+.photo {
+	box-sizing: border-box;
+	width: 300px;
+	margin-bottom: 10px;
+	/*padding: 1em;*/
+}
+
+.double {
+	width: 610px;
+}
+
+/*@media screen and (min-width: 40em) {
+	.photo {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 60em) {
+	.photo {
+		width: 33%;
+	}
+}
+
+@media screen and (min-width: 80em) {
+	.photo {
+		width: 25%;
+	}
+}*/
+
+/*--------------------------------------------------------------
+Gallery items
+--------------------------------------------------------------*/
+
+.photo figure {
+	position: relative;
+	margin: 0;
+	overflow: hidden;
+}
+
+.photo img {
+	display: block;
+	width: 100%;
+}
+
+.photo figcaption {
+	position: absolute;
+	box-sizing: border-box;
+	bottom: -4em;
+	width: 100%;
+	padding: 0 1em;
+	background: hsla(0, 0%, 100%, .75);
+	transition: bottom .2s;
+}
+
+.photo h2 {
+	font-size: 1.2em;
+	font-weight: lighter;
+}
+
+.photo a {
+	color: black;
+}
+
+.photo a:hover figcaption {
+	bottom: 0;
+}
